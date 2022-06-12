@@ -3,14 +3,6 @@
 Create an application that generates a random password based on user-selected criteria. The app runs in the browser and features dynamically updated HTML and CSS powered by your JavaScript code. It has a clean and polished user interface and is responsive, which ensures that it adapts to multiple screen sizes.
 
 
-## Story
-
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
-
 ## Acceptance Criteria
 
 ```
@@ -33,10 +25,10 @@ THEN the password is either displayed in an alert or written to the page
 
 The following image demonstrates the application functionality:
 
-![An app window with the label Password Generator, an input field labeled Your Secure Password, and a Generate Password button.](./Assets/03-javascript-homework-demo.png)
+![An app window with the label Password Generator, an input field labeled Your Secure Password, and a Generate Password button.](assets/images/03-javascript-homework-demo.png)
 
 ## My Github and links
 
-https://github.com/coleyrockin/password-generator > REPO
+https://github.com/coleyrockin/password-generator > Repository
 
 https://coleyrockin.github.io/password-generator/ > Direct application

@@ -1,9 +1,9 @@
 // Assignment Code
 function generatePassword() {
   var possibleCharactersvar = [];
-  var numbersvar = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-  var uppercasevar = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-  var lowercasevar = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+  var numbersVar = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  var upperCasevar = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+  var lowerCasevar = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
   var specialCharactersvar = ['@', '%', '+', '/', "'", '!', '#', '$', '^', '?', ':', ',', ')', '(', '}', '{', ']', '[', '~', '-', '_', '.'];
 
   //input and validate
@@ -24,6 +24,53 @@ function generatePassword() {
     alert haveLowercase("Your password will NOT have lowercase characters");
   }
 
+  upperCase = confirm("Do you want upercase characters?");
+  if (upperCase) {
+    alert("Your password will have uppercase characters");
+  }
+  else {
+    alert("Your password will NOT have uppercase characters.");
+  }
+
+  numbers = confirm("Do you want to use numbers?");
+  if (numbers) {
+    alert("Your password will have numbers.");
+  }
+  else {
+    alert("Your password will NOT have numbers.")
+  }
+
+  specialCharacters = confirm("Do you want special characters?");
+  if (specialCharacters) {
+    alert("Your password will have special characters.");
+  }
+  else {
+    alert("Your password will NOT have spcecial characters.");
+  }
+
+  if (lowerCase === false && upperCase === false && numbers === false && specialCharacters === false ) {
+    return "Please select at least one character type.";
+  };
+
+  if (lowerCase) {
+    possibleCharactersvar = possibleCharactersvar.concat(lowerCasevar);
+  }
+  if (upperCase) {
+  possibleCharactersvar = possibleCharactersvar.concat(upperCasevar);
+  }
+  if (numbers) {
+    possibleCharactersvar = possibleCharactersvar.concat(numbersVar);
+  }
+  if (specialCharacters) {
+    possibleCharactersvar = possibleCharactersvar.concat (specialCharactersvar);
+  }
+
+  let finalPassword = ""
+  for (insertsomecrazycraphere){
+  }
+    return finalPassword;
+  };
+  
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input

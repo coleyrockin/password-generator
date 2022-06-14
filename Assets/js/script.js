@@ -7,21 +7,21 @@ function generatePassword() {
   var specialCharactersvar = ['@', '%', '+', '/', "'", '!', '#', '$', '^', '?', ':', ',', ')', '(', '}', '{', ']', '[', '~', '-', '_', '.'];
 
   //input and validate
-  howManyCharatcers = prompt ('How many characters do you want your password to be? Choose bewteen 8-128 characters');
-  if (howmanyCharatcers < 8 || howManyCharatcers > 128 ) {
+  howManyCharacters = prompt ('How many characters do you want your password to be? Choose bewteen 8-128 characters');
+  if (howManyCharacters < 8 || howManyCharacters > 128 ) {
     return "Please choose a valid number of characters";
-  } else if (isNaN (howManyCharatcers)) {
+  } else if (isNaN (howManyCharacters)) {
     numberOfCharatcers = prompt("Please enter a valid number");
   } else {
-    alert("Your password will be " + howManyCharatcers + " characters long.");
+    alert("Your password will be " + howManyCharacters + " characters long.");
   }
 
  lowerCase = confirm('Would you like lowercase characters?');
   if (lowerCase) {
-    var haveLowercase = ("Your password will have lowercase characters.");
+   alert ("Your password will have lowercase characters.");
   }
   else {
-    alert haveLowercase("Your password will NOT have lowercase characters");
+    alert ("Your password will NOT have lowercase characters");
   }
 
   upperCase = confirm("Do you want upercase characters?");
@@ -66,11 +66,13 @@ function generatePassword() {
   }
 
   let finalPassword = ""
-  for (insertsomecrazycraphere){
+  for (let i = 0; i < howManyCharacters; i++) {
+    let rng = [Math.floor(Math.random() * possibleCharactersvar.length)];
+    finalPassword = finalPassword + possibleCharactersvar[rng];
   }
     return finalPassword;
   };
-  
+
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
